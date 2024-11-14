@@ -168,7 +168,7 @@ function App() {
                 </div>
                 <p className="text-gray-400 max-w-md mb-8">Iluminando caminhos e transformando vidas através da terapia holística e do autoconhecimento.</p>
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-gold-400 mb-4">T.H ANTÔNIA DE MOURA LIMA</h3>
+                  <h3 className="text-xl font-bold text-gold-400 mb-4">T.H ANTONIA DE MOURA LIMA</h3>
                   <p className="text-gold-200">TERAPEUTA HOLÍSTICA SINT - NÍVEL III</p>
                   <p className="text-gold-200">MATRÍCULA SINTER - PR: BR2024009</p>
                 </div>
