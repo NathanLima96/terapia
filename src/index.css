@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cosmic-900 text-white overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .animate-gradient {
+    background: linear-gradient(
+      to right,
+      theme(colors.gold.300),
+      theme(colors.gold.400),
+      theme(colors.gold.500),
+      theme(colors.gold.300)
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient 8s linear infinite;
+  }
+
+  .cosmic-card {
+    background: linear-gradient(
+      135deg,
+      rgba(26, 26, 46, 0.8),
+      rgba(10, 10, 24, 0.9)
+    );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(255, 215, 0, 0.1);
+  }
+
+  @keyframes gradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .cosmic-glow {
+    filter: blur(20px);
+    mix-blend-mode: screen;
+  }
+}
